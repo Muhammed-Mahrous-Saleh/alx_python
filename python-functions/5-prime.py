@@ -1,12 +1,12 @@
 def is_prime(number):
-    print(number)
     if number == 1:
         return False
-    elif number <= 0:
+    elif number == 0:
         return False
-    for i in range(1, number):
+    elif number < 0:
+        number = number*-1
+    for i in range(2, number):
         if number % i == 0:
-            print(i)
             return False
 
     return True
