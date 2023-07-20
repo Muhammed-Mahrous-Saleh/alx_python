@@ -1,4 +1,5 @@
 def is_prime(number):
+    print(number)
     if number == 1:
         return True
     elif number == 0:
