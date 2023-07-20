@@ -1,7 +1,5 @@
 def convert_to_celsius(fahrenheit):
     result = 0
-    print(round((fahrenheit-32)/1.8, 2))
-    print((fahrenheit-32)//1.8+1)
 
     if round((fahrenheit-32)/1.8, 2) == (fahrenheit-32)//1.8+1:
         result = round((fahrenheit-32)/1.8, 2)
