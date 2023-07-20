@@ -1,4 +1,4 @@
-def validate_password(password):=
+def validate_password(password):
     password = str(password)
     if len(str(password)) < 8:
         return False
