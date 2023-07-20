@@ -1,5 +1,4 @@
-def validate_password(password):
-    print(password)
+def validate_password(password):=
     password = str(password)
     if len(str(password)) < 8:
         return False
@@ -13,6 +12,10 @@ def validate_password(password):
             break
         if str(i) == password[len(password)-1]:
             return False
+    if any(char.isdigit() for char in password):
+        pass
+    else:
+        return False
     for i in range(len(password)):
         if password[i].isspace():
             return False
