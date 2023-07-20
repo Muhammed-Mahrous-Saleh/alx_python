@@ -1,4 +1,5 @@
 def validate_password(password):
+    print(password)
     password = str(password)
     if len(str(password)) < 8:
         return False
