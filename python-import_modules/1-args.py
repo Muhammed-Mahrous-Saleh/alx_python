@@ -3,15 +3,15 @@ from sys import argv
 
 
 def main():
-    print("{} argument".format(len(argv)), end="")
-    if len(argv) != 1:
+    print("{} argument".format(len(argv)-1), end="")
+    if len(argv) != 2:
         print("s", end="")
-        if len(argv) == 0:
+        if len(argv) == 1:
             print(".")
-        else:
+    if len(argv) != 1:
             print(":")
 
-    for i in range(1, len(argv)+1):
+    for i in range(1, len(argv)):
         print("{}: {}".format(i, argv[i]))
 
 
