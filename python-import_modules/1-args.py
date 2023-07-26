@@ -3,7 +3,7 @@ from sys import argv
 
 
 def main():
-    print("{} argument{}".format(len(argv)), end="")
+    print("{} argument".format(len(argv)), end="")
     if len(argv) != 1:
         print("s", end="")
         if len(argv) == 0:
