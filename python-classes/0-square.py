@@ -13,4 +13,4 @@ class Square:
 
         self.__size = size
 
-help(Square)
+Square
