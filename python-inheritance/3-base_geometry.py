@@ -2,7 +2,7 @@
 """Defines an empty class BaseGeometry"""
 
 
-class BaseGeometry:
+class BaseGeometry(object):
     """Empty class
     """
     pass
