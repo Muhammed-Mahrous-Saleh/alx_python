@@ -4,15 +4,21 @@ class Square:
     """A square object of a specific size"""
 
     def __init__(self, size):
-        """Initialize an object"""
+        """x = Square(15)
+        Initialize an object
+
+        Args:
+            size (int): size of the square object.
+
+        """
         self.set_size(size)
 
     def set_size(self, size):
-        """Set a size value of the Square object
-        Args:
-            size (int): size value of the square.
+        """x.set_size(15)
+        Set a size value of the Square object
 
-        Returns:
-            None
+        Args:
+            size (int): size of the square object.
+
         """
         self.__size = size
