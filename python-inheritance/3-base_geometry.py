@@ -4,7 +4,7 @@
 
 class NoInitSubclassMeta(type):
     def __dir__(cls):
-        return [attr for attr in super().__dir__() if 
+        return [attr for attr in super().__dir__() if
                 attr != '__init_subclass__']
 
 
