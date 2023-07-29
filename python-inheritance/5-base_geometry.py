@@ -25,7 +25,7 @@ class BaseGeometry(metaclass=NoInitSubclassMeta):
             Exception: if area is not implemented.
         """
         raise Exception("area() is not implemented")
-    
+
     def integer_validator(self, name, value):
         """Validates value.
 
