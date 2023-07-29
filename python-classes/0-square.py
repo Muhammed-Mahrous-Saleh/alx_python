@@ -11,6 +11,3 @@ class Square:
     def set_size(self, size):
         """Set a size value of the Square object"""
         self.__size = size
-
-
-help(Square)
