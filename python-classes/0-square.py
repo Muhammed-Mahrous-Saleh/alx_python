@@ -1,28 +1,18 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
-#: Doc comment *inline* with attribute
+"""Defines a class Square"""
+
+
 class Square:
-    #: Doc comment *inline* with attribute
-    """A square object of a specific size"""
+    """
+    Class that defines properties of square by: (based on 0-square.py).
 
+    Attributes:
+        size: size of a square (1 side).
+    """
     def __init__(self, size):
-        #: Doc comment *inline* with attribute
-        """x = Square(15)
-        Initialize an object
+        """Creates new instances of square (1 side).
 
         Args:
-            size (int): size of the square object.
-
-        """
-        self.set_size(size)
-
-    def set_size(self, size):
-        #: Doc comment *inline* with attribute
-        """x.set_size(15)
-        Set a size value of the Square object
-
-        Args:
-            size (int): size of the square object.
-
+            size: size of the square.
         """
         self.__size = size
