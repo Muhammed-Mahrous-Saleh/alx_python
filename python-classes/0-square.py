@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
 #: Doc comment *inline* with attribute
 class Square:
     #: Doc comment *inline* with attribute
