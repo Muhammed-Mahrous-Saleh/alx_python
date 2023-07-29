@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 class Square:
     """A square object of a specific size"""
 
