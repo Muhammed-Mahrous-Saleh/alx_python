@@ -12,3 +12,5 @@ class Square:
         """Set a size value of the Square object"""
 
         self.__size = size
+
+help(Square)
