@@ -23,7 +23,7 @@ class Square(Rectangle):
             y (int, optional): y. Defaults to 0.
             id (int, optional): Identity number of square. Defaults to None.
         """
-        super().__init__(id, size, size, x, y)
+        super().__init__(size, size, x, y, id)
 
     def __str__(self):
         """Overriding the method 
@@ -31,4 +31,4 @@ class Square(Rectangle):
         Returns:
             str: [Square] (<id>) <x>/<y> - <size>"""
 
-        return f"[Square] ({self.id}) {self.__x}/{self.__y} - {self.__width}"
+        return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
