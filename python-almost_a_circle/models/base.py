@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" base file """
+"""Defines a class Base"""
 
 class Base:
     
