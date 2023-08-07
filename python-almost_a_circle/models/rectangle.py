@@ -140,3 +140,12 @@ class Rectangle(Base):
             int: area
         """
         return self.__width * self.__height
+
+    def display(self): 
+        """Prints in stdout the Rectangle instance with the character #
+        
+        Returns:
+            set: set of # characters
+        """
+        for i in range(self.__height):
+            print("#"*self.__width)
