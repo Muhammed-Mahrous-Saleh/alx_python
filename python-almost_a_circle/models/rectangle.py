@@ -1,0 +1,102 @@
+#!/usr/bin/python3
+"Define Rectangle class inherits Base class"
+
+from models.base import Base
+
+
+class Rectangle(Base):
+    """Class that defines properties of Rectangle.
+
+    Attributes:
+        width (int): width of rectangle.
+        height (int): height of rectangle.
+        x (int): x.
+        y (int): y.
+    """
+
+    def __init__(self, width, height, x=0, y=0, id=None):
+        """Creates Rectangle object.
+
+        Args:
+            width (int): width of rectangle.
+            height (int): height of rectangle.
+            x (int): x.
+            y (int): y.
+        """
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
+        super().__init__(id)
+
+    @property
+    def width(self):
+        """Width retriever.
+
+        Returns:
+            int: width of rectangle.
+        """
+        return self.__width
+
+    @width.setter
+    def width(self, value):
+        """Property setter for width of rectangle.
+
+        Args:
+            value (int): width of rectangle.
+        """
+        self.__width = value
+
+    @property
+    def height(self):
+        """height retriever.
+
+        Returns:
+            int: height of rectangle.
+        """
+        return self.__height
+
+    @height.setter
+    def height(self, value):
+        """Property setter for height of rectangle.
+
+        Args:
+            value (int): height of rectangle.
+        """
+        self.__height = value
+
+    @property
+    def x(self):
+        """x retriever.
+
+        Returns:
+            int: x of rectangle.
+        """
+        return self.__x
+
+    @x.setter
+    def x(self, value):
+        """Property setter for x of rectangle.
+
+        Args:
+            value (int): x of rectangle.
+        """
+        self.__x = value
+
+    @property
+    def y(self):
+        """y retriever.
+
+        Returns:
+            int: y of rectangle.
+        """
+        return self.__y
+
+    @y.setter
+    def y(self, value):
+        """Property setter for y of rectangle.
+
+        Args:
+            value (int): y of rectangle.
+        """
+        self.__y = value
