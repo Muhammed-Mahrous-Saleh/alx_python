@@ -31,12 +31,12 @@ class Rectangle(Base):
 
     def __str__(self):
         """Overriding the method 
-        
+
         Returns:
             str: [Rectangle] (<id>) <x>/<y> - <width>/<height>"""
-        
+
         return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
-    
+
     @property
     def width(self):
         """Width retriever.
@@ -149,15 +149,15 @@ class Rectangle(Base):
         """
         return self.__width * self.__height
 
-    def display(self): 
+    def display(self):
         """Prints in stdout the Rectangle instance with the character #"""
         for i in range(self.__y):
             print()
         for i in range(self.__height):
-            print(" "*self.__x,end="")
+            print(" "*self.__x, end="")
             print("#"*self.__width)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Assigns an argument to each attribute:
 
         Args:
@@ -169,8 +169,9 @@ class Rectangle(Base):
                 5th argument should be the y attribute
         """
         object_args = ['id', 'width', 'height', 'x', 'y']
-        for i in range(len(args)):
-            setattr(self, object_args[i], args[i])
-        
-
-
+        if args != None and len(args) != 0:
+            for i in range(len(args)):
+                setattr(self, object_args[i], args[i])
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
