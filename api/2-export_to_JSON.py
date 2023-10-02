@@ -1,6 +1,29 @@
-import json
+"""
+2-export_to_JSON.py
+
+This module provides functionality to fetch employee details and their TODO list
+from a given API and exports the TODO list to a JSON file. The JSON file is named
+after the employee's ID and contains tasks with details like task title, completion status, 
+and associated username.
+
+Usage:
+    python3 2-export_to_JSON.py EMPLOYEE_ID
+
+Returns:
+    A JSON file named {EMPLOYEE_ID}.json with the TODO list for the provided employee ID.
+
+Raises:
+    ValueError: If the provided EMPLOYEE_ID is not a valid integer.
+
+Dependencies:
+    - requests: To make HTTP requests to the API.
+    - json: To handle JSON operations.
+    - sys: To access command-line arguments.
+"""
+
 import requests
 import sys
+import json
 
 
 def export_todo_to_json(employee_id):
@@ -43,7 +66,7 @@ def export_todo_to_json(employee_id):
 if __name__ == "__main__":
     # Ensure correct number of command line arguments
     if len(sys.argv) != 2:
-        print("Usage: python3 script_name.py EMPLOYEE_ID")
+        print("Usage: python3 2-export_to_JSON.py EMPLOYEE_ID")
         sys.exit(1)
 
     # Fetch and write the TODO list for the provided employee ID
