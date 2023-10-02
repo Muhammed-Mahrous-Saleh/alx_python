@@ -8,7 +8,7 @@ def export_to_CSV(employee_id):
     # The API requests and data extraction will remain the same as in the provided script.
 
     # Get employee details
-    user_url = f"https://jsonplaceholder.typicode.com/users/id={employee_id}"
+    user_url = f"https://jsonplaceholder.typicode.com/users/{employee_id}"
     user_response = requests.get(user_url)
     user_data = user_response.json()
     employee_name = user_data["name"]
@@ -31,5 +31,10 @@ def export_to_CSV(employee_id):
 if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Usage: python3 script_name.py EMPLOYEE_ID")
-    else:
-        export_to_CSV(sys.argv[1])
+        sys.exit(1)
+
+    try:
+        employee_id = int(sys.argv[1])
+        export_to_CSV(employee_id)
+    except ValueError:
+        print("Please provide a valid employee ID.")
