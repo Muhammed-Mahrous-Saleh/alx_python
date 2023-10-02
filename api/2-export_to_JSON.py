@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 2-export_to_JSON.py
 
@@ -22,7 +23,7 @@ Dependencies:
 """
 
 import json
-import reqsuests
+import requests
 import sys
 
 
