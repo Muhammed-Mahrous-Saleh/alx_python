@@ -1,6 +1,6 @@
+import json
 import requests
 import sys
-import json
 
 
 def export_todo_to_json(employee_id):
