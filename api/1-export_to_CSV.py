@@ -8,7 +8,7 @@ def export_to_CSV(employee_id):
     # The API requests and data extraction will remain the same as in the provided script.
 
     # Get employee details
-    user_url = f"https://jsonplaceholder.typicode.com/users/{employee_id}"
+    user_url = f"https://jsonplaceholder.typicode.com/users/id={employee_id}"
     user_response = requests.get(user_url)
     user_data = user_response.json()
     employee_name = user_data["name"]
