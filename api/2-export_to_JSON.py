@@ -43,7 +43,7 @@ def export_todo_to_json(employee_id):
     user_url = f"https://jsonplaceholder.typicode.com/users/{employee_id}"
     user_response = requests.get(user_url)
     user_data = user_response.json()
-    employee_name = user_data["name"]
+    employee_name = user_data["username"]
 
     # Get TODO list for the employee
     todos_url = f"https://jsonplaceholder.typicode.com/users/{employee_id}/todos"
